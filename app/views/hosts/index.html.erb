@@ -1,0 +1,33 @@
+<h1>Listing hosts</h1>
+
+<table>
+  <tr>
+    <th>Host</th>
+    <th>Dns</th>
+    <th>Useip</th>
+    <th>Ip</th>
+    <th>Port</th>
+    <th>Status</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @hosts.each do |host| %>
+  <tr>
+    <td><%= host.host %></td>
+    <td><%= host.dns %></td>
+    <td><%= host.useip %></td>
+    <td><%= host.ip %></td>
+    <td><%= host.port %></td>
+    <td><%= host.status %></td>
+    <td><%= link_to 'Show', host %></td>
+    <td><%= link_to 'Edit', edit_host_path(host) %></td>
+    <td><%= link_to 'Destroy', host, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Host', new_host_path %>

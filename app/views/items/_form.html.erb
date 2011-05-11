@@ -1,0 +1,125 @@
+<%= form_for(@item) do |f| %>
+  <% if @item.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@item.errors.count, "error") %> prohibited this item from being saved:</h2>
+
+      <ul>
+      <% @item.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :type_ %><br />
+    <%= f.text_field :type_ %>
+  </div>
+  <div class="field">
+    <%= f.label :host_id %><br />
+    <%= f.text_field :host_id %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :key_ %><br />
+    <%= f.text_field :key_ %>
+  </div>
+  <div class="field">
+    <%= f.label :delay %><br />
+    <%= f.text_field :delay %>
+  </div>
+  <div class="field">
+    <%= f.label :history %><br />
+    <%= f.text_field :history %>
+  </div>
+  <div class="field">
+    <%= f.label :trends %><br />
+    <%= f.text_field :trends %>
+  </div>
+  <div class="field">
+    <%= f.label :lastvalue %><br />
+    <%= f.text_field :lastvalue %>
+  </div>
+  <div class="field">
+    <%= f.label :prevvalue %><br />
+    <%= f.text_field :prevvalue %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br />
+    <%= f.text_field :status %>
+  </div>
+  <div class="field">
+    <%= f.label :value_type %><br />
+    <%= f.text_field :value_type %>
+  </div>
+  <div class="field">
+    <%= f.label :trapper_hosts %><br />
+    <%= f.text_field :trapper_hosts %>
+  </div>
+  <div class="field">
+    <%= f.label :units %><br />
+    <%= f.text_field :units %>
+  </div>
+  <div class="field">
+    <%= f.label :multiplier %><br />
+    <%= f.text_field :multiplier %>
+  </div>
+  <div class="field">
+    <%= f.label :delta %><br />
+    <%= f.text_field :delta %>
+  </div>
+  <div class="field">
+    <%= f.label :prevorgvalue %><br />
+    <%= f.text_field :prevorgvalue %>
+  </div>
+  <div class="field">
+    <%= f.label :formula %><br />
+    <%= f.text_field :formula %>
+  </div>
+  <div class="field">
+    <%= f.label :error %><br />
+    <%= f.text_field :error %>
+  </div>
+  <div class="field">
+    <%= f.label :lastlogsize %><br />
+    <%= f.text_field :lastlogsize %>
+  </div>
+  <div class="field">
+    <%= f.label :logtimefmt %><br />
+    <%= f.text_field :logtimefmt %>
+  </div>
+  <div class="field">
+    <%= f.label :template_id %><br />
+    <%= f.text_field :template_id %>
+  </div>
+  <div class="field">
+    <%= f.label :valuemap_id %><br />
+    <%= f.text_field :valuemap_id %>
+  </div>
+  <div class="field">
+    <%= f.label :delay_flex %><br />
+    <%= f.text_field :delay_flex %>
+  </div>
+  <div class="field">
+    <%= f.label :params %><br />
+    <%= f.text_area :params %>
+  </div>
+  <div class="field">
+    <%= f.label :data_type %><br />
+    <%= f.text_field :data_type %>
+  </div>
+  <div class="field">
+    <%= f.label :authtype %><br />
+    <%= f.text_field :authtype %>
+  </div>
+  <div class="field">
+    <%= f.label :mtime %><br />
+    <%= f.text_field :mtime %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

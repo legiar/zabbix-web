@@ -1,0 +1,59 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  type_: 1
+  host_id: 1
+  description: MyString
+  key_: MyString
+  delay: 1
+  history: 1
+  trends: 1
+  lastvalue: MyString
+  prevvalue: MyString
+  status: 1
+  value_type: 1
+  trapper_hosts: MyString
+  units: MyString
+  multiplier: 1
+  delta: 1
+  prevorgvalue: MyString
+  formula: MyString
+  error: MyString
+  lastlogsize: 1
+  logtimefmt: MyString
+  template_id: 1
+  valuemap_id: 1
+  delay_flex: MyString
+  params: MyText
+  data_type: 1
+  authtype: 1
+  mtime: 1
+
+two:
+  type_: 1
+  host_id: 1
+  description: MyString
+  key_: MyString
+  delay: 1
+  history: 1
+  trends: 1
+  lastvalue: MyString
+  prevvalue: MyString
+  status: 1
+  value_type: 1
+  trapper_hosts: MyString
+  units: MyString
+  multiplier: 1
+  delta: 1
+  prevorgvalue: MyString
+  formula: MyString
+  error: MyString
+  lastlogsize: 1
+  logtimefmt: MyString
+  template_id: 1
+  valuemap_id: 1
+  delay_flex: MyString
+  params: MyText
+  data_type: 1
+  authtype: 1
+  mtime: 1

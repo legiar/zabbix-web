@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Host:</b>
+  <%= @host.host %>
+</p>
+
+<p>
+  <b>Dns:</b>
+  <%= @host.dns %>
+</p>
+
+<p>
+  <b>Useip:</b>
+  <%= @host.useip %>
+</p>
+
+<p>
+  <b>Ip:</b>
+  <%= @host.ip %>
+</p>
+
+<p>
+  <b>Port:</b>
+  <%= @host.port %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @host.status %>
+</p>
+
+
+<%= link_to 'Edit', edit_host_path(@host) %> |
+<%= link_to 'Back', hosts_path %>

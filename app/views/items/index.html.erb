@@ -1,0 +1,75 @@
+<h1>Listing items</h1>
+
+<table>
+  <tr>
+    <th>Type </th>
+    <th>Host</th>
+    <th>Description</th>
+    <th>Key </th>
+    <th>Delay</th>
+    <th>History</th>
+    <th>Trends</th>
+    <th>Lastvalue</th>
+    <th>Prevvalue</th>
+    <th>Status</th>
+    <th>Value type</th>
+    <th>Trapper hosts</th>
+    <th>Units</th>
+    <th>Multiplier</th>
+    <th>Delta</th>
+    <th>Prevorgvalue</th>
+    <th>Formula</th>
+    <th>Error</th>
+    <th>Lastlogsize</th>
+    <th>Logtimefmt</th>
+    <th>Template</th>
+    <th>Valuemap</th>
+    <th>Delay flex</th>
+    <th>Params</th>
+    <th>Data type</th>
+    <th>Authtype</th>
+    <th>Mtime</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @items.each do |item| %>
+  <tr>
+    <td><%= item.type_ %></td>
+    <td><%= item.host_id %></td>
+    <td><%= item.description %></td>
+    <td><%= item.key_ %></td>
+    <td><%= item.delay %></td>
+    <td><%= item.history %></td>
+    <td><%= item.trends %></td>
+    <td><%= item.lastvalue %></td>
+    <td><%= item.prevvalue %></td>
+    <td><%= item.status %></td>
+    <td><%= item.value_type %></td>
+    <td><%= item.trapper_hosts %></td>
+    <td><%= item.units %></td>
+    <td><%= item.multiplier %></td>
+    <td><%= item.delta %></td>
+    <td><%= item.prevorgvalue %></td>
+    <td><%= item.formula %></td>
+    <td><%= item.error %></td>
+    <td><%= item.lastlogsize %></td>
+    <td><%= item.logtimefmt %></td>
+    <td><%= item.template_id %></td>
+    <td><%= item.valuemap_id %></td>
+    <td><%= item.delay_flex %></td>
+    <td><%= item.params %></td>
+    <td><%= item.data_type %></td>
+    <td><%= item.authtype %></td>
+    <td><%= item.mtime %></td>
+    <td><%= link_to 'Show', item %></td>
+    <td><%= link_to 'Edit', edit_item_path(item) %></td>
+    <td><%= link_to 'Destroy', item, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Item', new_item_path %>

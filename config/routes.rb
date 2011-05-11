@@ -1,4 +1,9 @@
 Zabbix::Application.routes.draw do
+  resources :items
+  resources :groups
+  resources :applications
+  resources :hosts
+
   devise_for :users
 
   # The priority is based upon order of creation:
