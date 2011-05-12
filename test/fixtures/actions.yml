@@ -1,0 +1,25 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  eventsource: 1
+  evaltype: 1
+  status: 1
+  esc_period: 1
+  def_shortdata: MyString
+  def_longdata: MyText
+  recovery_msg: 1
+  r_shortdata: MyString
+  r_logndata: MyText
+
+two:
+  name: MyString
+  eventsource: 1
+  evaltype: 1
+  status: 1
+  esc_period: 1
+  def_shortdata: MyString
+  def_longdata: MyText
+  recovery_msg: 1
+  r_shortdata: MyString
+  r_logndata: MyText

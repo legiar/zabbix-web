@@ -4,6 +4,13 @@ Zabbix::Application.routes.draw do
   resources :applications
   resources :hosts
 
+  resources :screens
+  resources :graphs do 
+    member do
+      get "data"
+    end
+  end
+
   devise_for :users
 
   # The priority is based upon order of creation:

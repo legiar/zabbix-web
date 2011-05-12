@@ -37,6 +37,10 @@ GEM
       warden (~> 1.0.3)
     erubis (2.6.6)
       abstract (>= 1.0.0)
+    ffi (1.0.7)
+      rake (>= 0.8.7)
+    gd2-ffij (0.0.3)
+    gruff (0.3.6)
     haml (3.1.1)
     i18n (0.5.0)
     mail (2.2.19)
@@ -79,6 +83,9 @@ PLATFORMS
 
 DEPENDENCIES
   devise
+  ffi
+  gd2-ffij
+  gruff
   haml
   mysql2 (= 0.2.6)
   rails (= 3.0.7)

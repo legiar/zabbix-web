@@ -4,6 +4,10 @@ gem 'rails', '3.0.7'
 gem 'mysql2', '= 0.2.6'
 gem 'devise'
 gem 'haml'
+#gem 'rchart', '= 2.0.2'
+gem 'gd2-ffij'
+gem 'ffi'
+gem 'gruff'
 
 # Use unicorn as the web server
 # gem 'unicorn'

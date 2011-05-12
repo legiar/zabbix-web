@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  action_id: 1
+  conditiontype: 1
+  operator: 1
+  value: MyString
+
+two:
+  action_id: 1
+  conditiontype: 1
+  operator: 1
+  value: MyString
